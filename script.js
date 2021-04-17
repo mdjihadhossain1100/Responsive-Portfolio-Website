@@ -1,4 +1,5 @@
 // Navigation menu
+let body = document.querySelector("body");
 let menuBtn = document.querySelector(".menu-button");
 let canceBtn = document.querySelector(".cancel-btn");
 let navBar = document.querySelector(".navbar");
