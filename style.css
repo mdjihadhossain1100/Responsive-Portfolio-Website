@@ -1,0 +1,463 @@
+/* install Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* install ubantu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  background: #f2f2f2;
+}
+section{
+  padding: 80px 0;
+}
+
+/* Navigation menu css */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background: #fff;
+  z-index: 1;
+}
+nav.sticky{
+  padding: 13px 0px;
+  background: #4070f4;
+}
+nav .navbar{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar .logo a{
+  font-size: 40px;
+  font-weight: 500;
+  color: #4070f4;
+  text-decoration: none;
+}
+nav.sticky .logo a{
+  color: #fff;
+}
+nav .navbar .menu{
+  display: flex;
+}
+nav .navbar .menu li{
+  margin: 0 8px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0e2431;
+}
+nav .navbar .menu li a:hover{
+  color: #4070f4;
+}
+nav.sticky .navbar .menu li a:hover{
+  color: #0e2431;
+}
+nav.sticky .menu li a{
+  color: #fff;
+}
+.navbar .media_icon a{
+  font-size: 18px;
+  margin: 0 6px;
+  color: #4070f4;
+}
+nav.sticky .media_icon a{
+  color: #fff;
+}
+/* side navigation menu button css */
+nav .menu-button,
+.navbar .cancel-btn{
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-button{
+  color: #4070f4;
+}
+nav.sticky .menu-button{
+  color: #fff;
+}
+
+/* Home section css */
+.home{
+  height: 100vh;
+  width: 100%;
+  background: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home-content{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-content .home-text .text-one{
+  font-size: 25px;
+}
+.home-content .home-text .text-two{
+  font-size: 75px;
+  font-weight: 600;
+  color: #4070f4;
+}
+.home-content .home-text .text-three{
+  font-size: 40px;
+}
+.home-content .home-text .text-four{
+  font-size: 23px;
+  margin: 5px 0px;
+}
+.home-content .button{
+  margin: 14px 0px;
+}
+.home-content .button button{
+  font-size: 23px;
+  font-weight: 500;
+  color: #fff;
+  background: #4070f4;
+  padding: 8px 16px;
+  outline: none;
+  border-radius: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+.home-content .button button:hover{
+  color: #4070f4;
+  background: #fff;
+  border-color: #4070f4;
+}
+
+
+/* About section css */
+section .content{
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+section .content .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+section .content .title span{
+  font-size: 33px;
+  font-weight: 600;
+  position: relative;
+}
+section .content .title span::after,
+section .content .title span::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #4070f4;
+}
+section .content .title span::after{
+  width: 70%;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-details .right{
+  width: 45%;
+}
+.about .about-details .right img{
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.about .about-details .left{
+  width: 55%;
+  align-items: center;
+}
+section .topic{
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .left p{
+  text-align: justify;
+  color: #0e2431;
+  font-weight: 500;
+}
+section .content .button{
+  margin: 14px 0px;
+}
+section .content .button button{
+  font-size: 23px;
+  font-weight: 500;
+  color: #fff;
+  background: #4070f4;
+  padding: 8px 16px;
+  outline: none;
+  border-radius: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+section .content .button button:hover{
+  color: #4070f4;
+  background: #fff;
+  border-color: #4070f4;
+}
+
+
+/* Skills section Start */
+.skills{
+  background: #f0f8ff;
+}
+
+.skills-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills-details .left{
+  width: 50%;
+}
+.skills .left p{
+  color: #0e2431;
+  text-align: justify;
+}
+.skills-details .boxes{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills-details .experience{
+  display: flex;
+  align-items: center;
+}
+.skills-details .experience .num{
+  font-size: 80px;
+  color: #0e2431;
+  font-weight: 500;
+}
+.skills .boxes .box{
+  width: calc(100%/2 - 20px);
+  color: #4070f4;
+}
+.skills .boxes .box .topic{
+  font-weight: 500;
+}
+.skills .boxes .box .num{
+  font-size: 60px;
+  font-weight: 500;
+}
+
+/* Services section start */
+.services .boxes{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services .boxes .box{
+  width: calc(100% / 3 - 20px);
+  margin: 20px 0;
+  padding: 20px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  text-align: center;
+  transition: all .5s ease;
+}
+.services .boxes .box:hover{
+  background: #4070f4;
+  color: #fff;
+}
+.services .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 100%;
+  margin: 0 auto 10px auto;
+  transition: all .4s ease;
+}
+.services .boxes .box:hover .icon{
+  background: #fff;
+  color: #4070f4;
+}
+.services .boxes .box p{
+  text-align: center;
+}
+
+/* Contact section css */
+.contact{
+  background: #fff;
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.contact .button{
+  text-align: center;
+}
+
+/* Footer Css */
+footer{
+  background: #4070f4;
+  padding: 15px 0;
+  text-align: center;
+}
+footer .text span{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+}
+footer .text a{
+  color: #fff;
+  transition: all .3s ease;
+}
+footer .text a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* Responsive media quary css */
+@media (max-width: 1190px){
+  .about .content{
+    width: 85%;
+  }
+  .skills .content{
+    width: 90%;
+  }
+  .services .boxes .box{
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 1090px){
+  .about .about-details{
+    flex-direction: column;
+  }
+  .about .about-details .right{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about .about-details .left{
+    width: 90%;
+    margin: 30px 0px;
+  }
+}
+
+
+@media (max-width: 750px){
+  nav .navbar .menu{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    background: #0e2431;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: all .5s ease;
+  }
+  nav .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu li a{
+    display: block;
+    font-size: 23px;
+    margin: 10px 0;
+    color: #fff;
+  }
+  .navbar .media_icon a{
+    display: none;
+  }
+  nav .menu-button,
+  .navbar .cancel-btn{
+    display: block;
+  }
+  .home-content .home-text .text-two{
+    font-size: 65px;
+    font-weight: 600;
+    color: #4070f4;
+  }
+  .home-content .home-text .text-three{
+    font-size: 35px;
+  }
+  .skills-details{
+    flex-direction: column;
+  }
+  .skills-details .left{
+    width: 90%;
+  }
+  .skills-details .boxes{
+    width: 90%;
+  }
+  .services .boxes .box{
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 515px){
+  .home-content .home-text .text-two{
+    font-size: 50px;
+  }
+  .home-content .home-text .text-three{
+    font-size: 30px;
+  }
+  .about .about-details .right img{
+    max-width: 400px;
+    width: 90%;
+    max-height: 400px;
+    height: 100%;
+  }
+}
+
+
+@media (max-width: 400px){
+  .home-content .home-text .text-two{
+    font-size: 43px;
+  }
+  .home-content .home-text .text-three{
+    font-size: 27px;
+  }
+  .about .about-details .right img{
+    width: 100%;
+  }
+}
