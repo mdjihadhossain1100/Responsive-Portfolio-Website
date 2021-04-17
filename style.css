@@ -326,12 +326,12 @@ section .content .button button:hover{
 /* Footer Css */
 footer{
   background: #4070f4;
-  padding: 15px 0;
+  padding: 11px 0;
   text-align: center;
 }
 footer .text span{
   color: #fff;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
 }
 footer .text a{
@@ -342,7 +342,21 @@ footer .text a:hover{
   text-decoration: underline;
 }
 
-
+/* Scroll-button Css */
+.scroll-button a{
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background: #4070f4;
+  color: #fff;
+  font-size: 18px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 3px;
+  display: none;
+}
 
 
 
